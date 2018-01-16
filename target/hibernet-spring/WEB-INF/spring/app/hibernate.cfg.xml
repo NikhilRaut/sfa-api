@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC  
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"  
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+		<property name="hbm2ddl.auto">update</property>
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/sfacv</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">root</property>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+
+		
+		<mapping class="com.nikhil.model.Stock" />
+		<mapping class="com.nikhil.model.Orders" />
+		<mapping class="com.nikhil.model.OrderItem" />
+		<mapping class="com.nikhil.model.Product" />
+		<mapping class="com.nikhil.model.Retailer" />
+		<mapping class="com.nikhil.model.DistributorSalesRepresentative" />
+		<mapping class="com.nikhil.model.Locality" />
+		<mapping class="com.nikhil.model.ProductCategory" />
+		<mapping class="com.nikhil.model.Invoice" />
+
+	</session-factory>
+
+</hibernate-configuration>  
