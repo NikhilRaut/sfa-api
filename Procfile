@@ -1,1 +1,1 @@
-web: java -jar target/hibernet-spring.jar
+web: sh target/bin/webapp
